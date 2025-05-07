@@ -62,7 +62,7 @@ function sayHello(){
 sayHello();
 
 const sayWorld = function(){
-  console.log("Hello");
+  console.log("World");
 }
 sayWorld();
 
@@ -188,10 +188,10 @@ console.log("Q5 for×if");
 
 let mixed = [4, '2', 5, '8', '9', 0, 1];
 
-for (let i = 0; i < 7; i++ ){
-  if(typeof mixed[i] == "number"&& mixed[i]%2==0){
+for (let i = 0; i < mixed.length; i++ ){
+  if(typeof mixed[i] === "number"&& mixed[i]%2===0){
     console.log("even");
-  } else if(typeof mixed[i]== "number"&&mixed[i]%2==1){
+  } else if(typeof mixed[i]=== "number"&&mixed[i]%2===1){
     console.log("odd");
   } else if(typeof mixed[i] !=="number"){
     console.log("not number");
